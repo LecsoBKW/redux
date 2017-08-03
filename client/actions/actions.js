@@ -10,3 +10,10 @@ export const valueChanged = (e) => {
     text : e
   }
 }
+
+export const deleteRow = (e) => {
+  return {
+    type : "DELETE_ROW",
+    id : e
+  }
+}

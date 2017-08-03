@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Row from './Row'
+import RowContainer from '../containers/RowContainer'
 
 const App = ({todos, newTodo, addtodo, inputValueChanged}) => (
       <div className="container">
@@ -15,7 +15,7 @@ const App = ({todos, newTodo, addtodo, inputValueChanged}) => (
               </div>
               <div className="col-xs-6"/>
           </div>
-          {todos.map((todo, index) => (<Row key={index} todoText={todo} />))}
+          {todos.map((todo, index) => (<RowContainer key={index} todoText={todo} keyVal={index} />))}
       </div>
 )
 

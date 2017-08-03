@@ -17,6 +17,10 @@ const TodoReducer = (
       newState.newTodo = action.text;
       return newState;
     }
+    else if(action.type == "DELETE_ROW") {
+      newState.todos.splice(action.id, 1);
+      return newState;
+    }
     return state;
 }
 
