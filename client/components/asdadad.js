@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Row from './Row';
-
+/*
 class App extends Component {
     constructor(props) {
         super(props);
@@ -32,7 +32,7 @@ class App extends Component {
     render() {
         var myTodos = [];
         for(let i = 0; i < this.state.todos.length; i++) {
-            myTodos.push((<Row 
+            myTodos.push((<Row
             todoText={this.state.todos[i]}
             key={i}
             keyVal={i}
@@ -57,6 +57,6 @@ class App extends Component {
             </div>
         )
     }
-}
+}*/
 
 export default App
